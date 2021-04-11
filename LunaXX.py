@@ -33,7 +33,7 @@ with sr.Microphone() as source:
         if feeling== "happy":
           engine.say("That's fantastic {}. I'm glad you are happy. Must be enjoying space huh?".format(name)) 
           engine.runAndWait()
-          engine.say("I glad to hear you are happy. Are you satisfied with my care?")
+          engine.say("I am glad to hear you are happy. Are you satisfied with my care?")
           engine.runAndWait()
           f=  sr.Recognizer()
           with sr.Microphone() as source:
@@ -72,7 +72,7 @@ with sr.Microphone() as source:
     with sr.Microphone() as source:
       audio= w.listen(source)
       name = w.recognize_google(audio)
-      engine.say("hi {} Get ready for your daily 30 minutes exercise".format(name))
+      engine.say("hi {} Get ready for your daily 30 minute exercise".format(name))
       engine.runAndWait()
       engine.say("would you like to do a heavy or light workout today")
       engine.runAndWait()
